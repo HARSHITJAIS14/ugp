@@ -1,0 +1,4 @@
+1. Perform a GCMC simulation of CO2 adsorption at 298 K and 1 bar on a high surface area microporous MOF. Use TraPPE for CO2, and run 5000 production cycles after 1000 initialization cycles. Report absolute loading in mol/kg and cm3(STP)/g.
+
+
+2. Perform a series of GCMC simulations to generate a CO2 adsorption isotherm at 298 K on a high surface area microporous MOF. Use the TraPPE force field for CO2.Plot an isotherm using 10 points upto 1 bar . For each pressure point, run 1000 production cycles after 500 initialization cycles

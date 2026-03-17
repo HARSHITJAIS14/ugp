@@ -593,6 +593,2030 @@
         "content_size": 1083
       },
       "completed_at": "2026-02-03T18:14:57.179948"
+    },
+    {
+      "request_id": 6,
+      "timestamp": "2026-02-17T13:09:50.555677",
+      "query": "Simulate water in UIO-66 at 300K and 1bar .",
+      "steps": [
+        {
+          "step": "llm_called",
+          "details": {
+            "prompt": "\n        You are an expert Molecular Simulation Data Engineer.\n        Your task is to extract simul...",
+            "result": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": "UIO-66",
+                "temperature": 300.0,
+                "pressure_list": [
+                  100000.0
+                ],
+                "unit_cells": null,
+                "helium_void_fraction": null
+              },
+              "parameters": {
+                "number_of_cycles": null,
+                "initialization_cycles": null,
+                "forcefield": null,
+                "cutoff": null
+              },
+              "component": {
+                "name": "water",
+                "mole_fraction": null
+              }
+            }
+          },
+          "time_taken": 4.870851516723633,
+          "timestamp": "2026-02-17T13:09:55.427957"
+        },
+        {
+          "step": "extraction_complete",
+          "details": {
+            "extracted": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": "UIO-66",
+                "temperature": 300.0,
+                "pressure_list": [
+                  100000.0
+                ]
+              },
+              "parameters": {},
+              "component": {
+                "name": "water"
+              }
+            }
+          },
+          "time_taken": 4.872013807296753,
+          "timestamp": "2026-02-17T13:09:55.429195"
+        },
+        {
+          "step": "defaults_merged",
+          "details": {
+            "config": {
+              "SimulationType": "MonteCarlo",
+              "NumberOfCycles": 25000,
+              "NumberOfInitializationCycles": 5000,
+              "PrintEvery": 1000,
+              "RestartFile": "no",
+              "Forcefield": "UFF",
+              "CutOff": 12.0,
+              "ChargeMethod": "Ewald",
+              "EwaldPrecision": 1e-06,
+              "Framework": {
+                "FrameworkName": "UIO-66",
+                "UnitCells": [
+                  2,
+                  2,
+                  2
+                ],
+                "HeliumVoidFraction": 0.29,
+                "ExternalTemperature": 300.0,
+                "ExternalPressure": [
+                  100000.0
+                ]
+              },
+              "Component": {
+                "Name": "water",
+                "MoleculeDefinition": "ExampleDefinitions",
+                "TranslationProbability": 0.5,
+                "RotationProbability": 0.5,
+                "ReinsertionProbability": 0.5,
+                "SwapProbability": 1.0,
+                "CreateNumberOfMolecules": 0
+              }
+            }
+          },
+          "time_taken": 1.0013580322265625e-05,
+          "timestamp": "2026-02-17T13:09:55.430036"
+        },
+        {
+          "step": "raspa_file_generated",
+          "details": {
+            "content_length": 1083
+          },
+          "time_taken": 1.1205673217773438e-05,
+          "timestamp": "2026-02-17T13:09:55.430979"
+        },
+        {
+          "step": "file_written",
+          "details": {
+            "filename": "simulation_case1.input",
+            "size": 1083
+          },
+          "time_taken": 4.5299530029296875e-05,
+          "timestamp": "2026-02-17T13:09:55.431940"
+        }
+      ],
+      "final_result": {
+        "output_file": "simulation_case1.input",
+        "content_size": 1083
+      },
+      "completed_at": "2026-02-17T13:09:55.432772"
+    },
+    {
+      "request_id": 7,
+      "timestamp": "2026-02-17T13:41:16.170452",
+      "query": "Simulate water in UIO-66 at 300K and 1bar .",
+      "steps": [
+        {
+          "step": "llm_called",
+          "details": {
+            "prompt": "\n        You are an expert Molecular Simulation Data Engineer.\n        Your task is to extract simul...",
+            "result": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": "UIO-66",
+                "temperature": 300.0,
+                "pressure_list": [
+                  100000.0
+                ],
+                "unit_cells": null,
+                "helium_void_fraction": null
+              },
+              "parameters": {
+                "number_of_cycles": null,
+                "initialization_cycles": null,
+                "forcefield": null,
+                "cutoff": null
+              },
+              "component": {
+                "name": "water",
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 7.943209648132324,
+          "timestamp": "2026-02-17T13:41:24.115666"
+        },
+        {
+          "step": "extraction_complete",
+          "details": {
+            "extracted": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": "UIO-66",
+                "temperature": 300.0,
+                "pressure_list": [
+                  100000.0
+                ]
+              },
+              "parameters": {},
+              "component": {
+                "name": "water",
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 7.944794654846191,
+          "timestamp": "2026-02-17T13:41:24.117028"
+        },
+        {
+          "step": "defaults_merged",
+          "details": {
+            "config": {
+              "SimulationType": "MonteCarlo",
+              "NumberOfCycles": 25000,
+              "NumberOfInitializationCycles": 5000,
+              "PrintEvery": 1000,
+              "RestartFile": "no",
+              "Forcefield": "UFF",
+              "CutOff": 12.0,
+              "ChargeMethod": "Ewald",
+              "EwaldPrecision": 1e-06,
+              "Framework": {
+                "FrameworkName": "UIO-66",
+                "UnitCells": [
+                  2,
+                  2,
+                  2
+                ],
+                "HeliumVoidFraction": 0.29,
+                "ExternalTemperature": 300.0,
+                "ExternalPressure": [
+                  100000.0
+                ]
+              },
+              "Component": {
+                "Name": "water",
+                "MoleculeDefinition": "ExampleDefinitions",
+                "TranslationProbability": 0.5,
+                "RotationProbability": 0.5,
+                "ReinsertionProbability": 0.5,
+                "SwapProbability": 1.0,
+                "CreateNumberOfMolecules": 0
+              }
+            }
+          },
+          "time_taken": 9.059906005859375e-06,
+          "timestamp": "2026-02-17T13:41:24.117985"
+        },
+        {
+          "step": "raspa_file_generated",
+          "details": {
+            "content_length": 1083
+          },
+          "time_taken": 1.1920928955078125e-05,
+          "timestamp": "2026-02-17T13:41:24.119011"
+        },
+        {
+          "step": "file_written",
+          "details": {
+            "filename": "simulation_case1.input",
+            "size": 1083
+          },
+          "time_taken": 4.792213439941406e-05,
+          "timestamp": "2026-02-17T13:41:24.120067"
+        }
+      ],
+      "final_result": {
+        "output_file": "simulation_case1.input",
+        "content_size": 1083
+      },
+      "completed_at": "2026-02-17T13:41:24.121028"
+    },
+    {
+      "request_id": 8,
+      "timestamp": "2026-02-17T13:41:32.916332",
+      "query": "Simulate water in UIO-66 at 300K and 1bar .",
+      "steps": [
+        {
+          "step": "llm_called",
+          "details": {
+            "prompt": "\n        You are an expert Molecular Simulation Data Engineer.\n        Your task is to extract simul...",
+            "result": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": "UIO-66",
+                "temperature": 300.0,
+                "pressure_list": [
+                  100000.0
+                ],
+                "unit_cells": null,
+                "helium_void_fraction": null
+              },
+              "parameters": {
+                "number_of_cycles": null,
+                "initialization_cycles": null,
+                "forcefield": null,
+                "cutoff": null
+              },
+              "component": {
+                "name": "water",
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 3.0947718620300293,
+          "timestamp": "2026-02-17T13:41:36.013359"
+        },
+        {
+          "step": "extraction_complete",
+          "details": {
+            "extracted": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": "UIO-66",
+                "temperature": 300.0,
+                "pressure_list": [
+                  100000.0
+                ]
+              },
+              "parameters": {},
+              "component": {
+                "name": "water",
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 3.0991249084472656,
+          "timestamp": "2026-02-17T13:41:36.017893"
+        },
+        {
+          "step": "defaults_merged",
+          "details": {
+            "config": {
+              "SimulationType": "MonteCarlo",
+              "NumberOfCycles": 25000,
+              "NumberOfInitializationCycles": 5000,
+              "PrintEvery": 1000,
+              "RestartFile": "no",
+              "Forcefield": "UFF",
+              "CutOff": 12.0,
+              "ChargeMethod": "Ewald",
+              "EwaldPrecision": 1e-06,
+              "Framework": {
+                "FrameworkName": "UIO-66",
+                "UnitCells": [
+                  2,
+                  2,
+                  2
+                ],
+                "HeliumVoidFraction": 0.29,
+                "ExternalTemperature": 300.0,
+                "ExternalPressure": [
+                  100000.0
+                ]
+              },
+              "Component": {
+                "Name": "water",
+                "MoleculeDefinition": "ExampleDefinitions",
+                "TranslationProbability": 0.5,
+                "RotationProbability": 0.5,
+                "ReinsertionProbability": 0.5,
+                "SwapProbability": 1.0,
+                "CreateNumberOfMolecules": 0
+              }
+            }
+          },
+          "time_taken": 9.5367431640625e-06,
+          "timestamp": "2026-02-17T13:41:36.019729"
+        },
+        {
+          "step": "raspa_file_generated",
+          "details": {
+            "content_length": 1083
+          },
+          "time_taken": 1.33514404296875e-05,
+          "timestamp": "2026-02-17T13:41:36.020900"
+        },
+        {
+          "step": "file_written",
+          "details": {
+            "filename": "simulation_case1.input",
+            "size": 1083
+          },
+          "time_taken": 5.221366882324219e-05,
+          "timestamp": "2026-02-17T13:41:36.022158"
+        }
+      ],
+      "final_result": {
+        "output_file": "simulation_case1.input",
+        "content_size": 1083
+      },
+      "completed_at": "2026-02-17T13:41:36.023274"
+    },
+    {
+      "request_id": 9,
+      "timestamp": "2026-02-17T13:43:19.971809",
+      "query": "Simulate water in UIO-66 at 300K and 1bar .",
+      "steps": [
+        {
+          "step": "llm_called",
+          "details": {
+            "prompt": "\n        You are an expert Molecular Simulation Data Engineer.\n        Your task is to extract simul...",
+            "result": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": "UIO-66",
+                "temperature": 300.0,
+                "pressure_list": [
+                  100000.0
+                ],
+                "unit_cells": null,
+                "helium_void_fraction": null
+              },
+              "parameters": {
+                "number_of_cycles": null,
+                "initialization_cycles": null,
+                "forcefield": null,
+                "cutoff": null
+              },
+              "component": {
+                "name": "water",
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 3.2942380905151367,
+          "timestamp": "2026-02-17T13:43:23.268920"
+        },
+        {
+          "step": "extraction_complete",
+          "details": {
+            "extracted": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": "UIO-66",
+                "temperature": 300.0,
+                "pressure_list": [
+                  100000.0
+                ]
+              },
+              "parameters": {},
+              "component": {
+                "name": "water",
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 3.2960128784179688,
+          "timestamp": "2026-02-17T13:43:23.270729"
+        },
+        {
+          "step": "defaults_merged",
+          "details": {
+            "config": {
+              "SimulationType": "MonteCarlo",
+              "NumberOfCycles": 25000,
+              "NumberOfInitializationCycles": 5000,
+              "PrintEvery": 1000,
+              "RestartFile": "no",
+              "Forcefield": "UFF",
+              "CutOff": 12.0,
+              "ChargeMethod": "Ewald",
+              "EwaldPrecision": 1e-06,
+              "Framework": {
+                "FrameworkName": "UIO-66",
+                "UnitCells": [
+                  2,
+                  2,
+                  2
+                ],
+                "HeliumVoidFraction": 0.29,
+                "ExternalTemperature": 300.0,
+                "ExternalPressure": [
+                  100000.0
+                ]
+              },
+              "Component": {
+                "Name": "water",
+                "MoleculeDefinition": "ExampleDefinitions",
+                "TranslationProbability": 0.5,
+                "RotationProbability": 0.5,
+                "ReinsertionProbability": 0.5,
+                "SwapProbability": 1.0,
+                "CreateNumberOfMolecules": 0
+              }
+            }
+          },
+          "time_taken": 8.58306884765625e-06,
+          "timestamp": "2026-02-17T13:43:23.272003"
+        },
+        {
+          "step": "raspa_file_generated",
+          "details": {
+            "content_length": 1083
+          },
+          "time_taken": 1.5497207641601562e-05,
+          "timestamp": "2026-02-17T13:43:23.280746"
+        },
+        {
+          "step": "file_written",
+          "details": {
+            "filename": "simulation_case1.input",
+            "size": 1083
+          },
+          "time_taken": 7.700920104980469e-05,
+          "timestamp": "2026-02-17T13:43:23.282190"
+        }
+      ],
+      "final_result": {
+        "output_file": "simulation_case1.input",
+        "content_size": 1083
+      },
+      "completed_at": "2026-02-17T13:43:23.283466"
+    },
+    {
+      "request_id": 10,
+      "timestamp": "2026-02-17T13:44:17.269833",
+      "query": "Simulate water in UIO-66 at 300K and 1bar .",
+      "steps": [
+        {
+          "step": "llm_called_mock",
+          "details": {
+            "input": "Simulate water in UIO-66 at 300K and 1bar .",
+            "result": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": null,
+                "temperature": 300.0,
+                "pressure_list": null,
+                "unit_cells": null,
+                "helium_void_fraction": null
+              },
+              "parameters": {
+                "number_of_cycles": null,
+                "initialization_cycles": null,
+                "forcefield": null,
+                "cutoff": null
+              },
+              "component": {
+                "name": null,
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 7.748603820800781e-05,
+          "timestamp": "2026-02-17T13:44:17.271815"
+        },
+        {
+          "step": "extraction_complete",
+          "details": {
+            "extracted": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "temperature": 300.0
+              },
+              "parameters": {},
+              "component": {
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 0.06984996795654297,
+          "timestamp": "2026-02-17T13:44:17.341585"
+        },
+        {
+          "step": "defaults_merged",
+          "details": {
+            "config": {
+              "SimulationType": "MonteCarlo",
+              "NumberOfCycles": 25000,
+              "NumberOfInitializationCycles": 5000,
+              "PrintEvery": 1000,
+              "RestartFile": "no",
+              "Forcefield": "UFF",
+              "CutOff": 12.0,
+              "ChargeMethod": "Ewald",
+              "EwaldPrecision": 1e-06,
+              "Framework": {
+                "FrameworkName": "MFI_SI",
+                "UnitCells": [
+                  2,
+                  2,
+                  2
+                ],
+                "HeliumVoidFraction": 0.29,
+                "ExternalTemperature": 300.0,
+                "ExternalPressure": [
+                  100000
+                ]
+              },
+              "Component": {
+                "Name": "CO2",
+                "MoleculeDefinition": "TraPPE",
+                "TranslationProbability": 0.5,
+                "RotationProbability": 0.5,
+                "ReinsertionProbability": 0.5,
+                "SwapProbability": 1.0,
+                "CreateNumberOfMolecules": 0
+              }
+            }
+          },
+          "time_taken": 1.3113021850585938e-05,
+          "timestamp": "2026-02-17T13:44:17.408038"
+        },
+        {
+          "step": "cif_download_error",
+          "details": {
+            "error": "generator raised StopIteration"
+          },
+          "time_taken": 0,
+          "timestamp": "2026-02-17T13:44:19.115887"
+        },
+        {
+          "step": "raspa_file_generated",
+          "details": {
+            "content_length": 1067
+          },
+          "time_taken": 1.4066696166992188e-05,
+          "timestamp": "2026-02-17T13:44:19.117723"
+        },
+        {
+          "step": "file_written",
+          "details": {
+            "filename": "simulation_case1.input",
+            "size": 1067
+          },
+          "time_taken": 5.745887756347656e-05,
+          "timestamp": "2026-02-17T13:44:19.119180"
+        }
+      ],
+      "final_result": {
+        "output_file": "simulation_case1.input",
+        "content_size": 1067
+      },
+      "completed_at": "2026-02-17T13:44:19.120551"
+    },
+    {
+      "request_id": 11,
+      "timestamp": "2026-02-17T13:48:15.013372",
+      "query": "Simulate water in UIO-66 at 300K and 1bar .",
+      "steps": [
+        {
+          "step": "llm_called_mock",
+          "details": {
+            "input": "Simulate water in UIO-66 at 300K and 1bar .",
+            "result": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": null,
+                "temperature": 300.0,
+                "pressure_list": null,
+                "unit_cells": null,
+                "helium_void_fraction": null
+              },
+              "parameters": {
+                "number_of_cycles": null,
+                "initialization_cycles": null,
+                "forcefield": null,
+                "cutoff": null
+              },
+              "component": {
+                "name": null,
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 6.794929504394531e-05,
+          "timestamp": "2026-02-17T13:48:15.015160"
+        },
+        {
+          "step": "extraction_complete",
+          "details": {
+            "extracted": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "temperature": 300.0
+              },
+              "parameters": {},
+              "component": {
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 0.05338907241821289,
+          "timestamp": "2026-02-17T13:48:15.068497"
+        },
+        {
+          "step": "defaults_merged",
+          "details": {
+            "config": {
+              "SimulationType": "MonteCarlo",
+              "NumberOfCycles": 25000,
+              "NumberOfInitializationCycles": 5000,
+              "PrintEvery": 1000,
+              "RestartFile": "no",
+              "Forcefield": "UFF",
+              "CutOff": 12.0,
+              "ChargeMethod": "Ewald",
+              "EwaldPrecision": 1e-06,
+              "Framework": {
+                "FrameworkName": "MFI_SI",
+                "UnitCells": [
+                  2,
+                  2,
+                  2
+                ],
+                "HeliumVoidFraction": 0.29,
+                "ExternalTemperature": 300.0,
+                "ExternalPressure": [
+                  100000
+                ]
+              },
+              "Component": {
+                "Name": "CO2",
+                "MoleculeDefinition": "TraPPE",
+                "TranslationProbability": 0.5,
+                "RotationProbability": 0.5,
+                "ReinsertionProbability": 0.5,
+                "SwapProbability": 1.0,
+                "CreateNumberOfMolecules": 0
+              }
+            }
+          },
+          "time_taken": 1.1205673217773438e-05,
+          "timestamp": "2026-02-17T13:48:15.098499"
+        },
+        {
+          "step": "cif_download_error",
+          "details": {
+            "error": "generator raised StopIteration"
+          },
+          "time_taken": 0,
+          "timestamp": "2026-02-17T13:48:17.072456"
+        },
+        {
+          "step": "raspa_file_generated",
+          "details": {
+            "content_length": 1067
+          },
+          "time_taken": 1.5020370483398438e-05,
+          "timestamp": "2026-02-17T13:48:17.074432"
+        },
+        {
+          "step": "file_written",
+          "details": {
+            "filename": "simulation_case1.input",
+            "size": 1067
+          },
+          "time_taken": 6.365776062011719e-05,
+          "timestamp": "2026-02-17T13:48:17.076214"
+        }
+      ],
+      "final_result": {
+        "output_file": "simulation_case1.input",
+        "content_size": 1067
+      },
+      "completed_at": "2026-02-17T13:48:17.077817"
+    },
+    {
+      "request_id": 12,
+      "timestamp": "2026-02-17T13:51:54.132606",
+      "query": "Simulate water in UIO-66 at 300K and 1bar .",
+      "steps": [
+        {
+          "step": "llm_called_mock",
+          "details": {
+            "input": "Simulate water in UIO-66 at 300K and 1bar .",
+            "result": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": null,
+                "temperature": 300.0,
+                "pressure_list": null,
+                "unit_cells": null,
+                "helium_void_fraction": null
+              },
+              "parameters": {
+                "number_of_cycles": null,
+                "initialization_cycles": null,
+                "forcefield": null,
+                "cutoff": null
+              },
+              "component": {
+                "name": null,
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 8.726119995117188e-05,
+          "timestamp": "2026-02-17T13:51:54.135287"
+        },
+        {
+          "step": "extraction_complete",
+          "details": {
+            "extracted": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "temperature": 300.0
+              },
+              "parameters": {},
+              "component": {
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 0.04826927185058594,
+          "timestamp": "2026-02-17T13:51:54.183414"
+        },
+        {
+          "step": "defaults_merged",
+          "details": {
+            "config": {
+              "SimulationType": "MonteCarlo",
+              "NumberOfCycles": 25000,
+              "NumberOfInitializationCycles": 5000,
+              "PrintEvery": 1000,
+              "RestartFile": "no",
+              "Forcefield": "UFF",
+              "CutOff": 12.0,
+              "ChargeMethod": "Ewald",
+              "EwaldPrecision": 1e-06,
+              "Framework": {
+                "FrameworkName": "MFI_SI",
+                "UnitCells": [
+                  2,
+                  2,
+                  2
+                ],
+                "HeliumVoidFraction": 0.29,
+                "ExternalTemperature": 300.0,
+                "ExternalPressure": [
+                  100000
+                ]
+              },
+              "Component": {
+                "Name": "CO2",
+                "MoleculeDefinition": "TraPPE",
+                "TranslationProbability": 0.5,
+                "RotationProbability": 0.5,
+                "ReinsertionProbability": 0.5,
+                "SwapProbability": 1.0,
+                "CreateNumberOfMolecules": 0
+              }
+            }
+          },
+          "time_taken": 1.4066696166992188e-05,
+          "timestamp": "2026-02-17T13:51:54.209081"
+        },
+        {
+          "step": "cif_download_error",
+          "details": {
+            "error": "generator raised StopIteration"
+          },
+          "time_taken": 0,
+          "timestamp": "2026-02-17T13:51:56.096528"
+        },
+        {
+          "step": "raspa_file_generated",
+          "details": {
+            "content_length": 1067
+          },
+          "time_taken": 1.5020370483398438e-05,
+          "timestamp": "2026-02-17T13:51:56.098552"
+        },
+        {
+          "step": "file_written",
+          "details": {
+            "filename": "simulation_case1.input",
+            "size": 1067
+          },
+          "time_taken": 6.771087646484375e-05,
+          "timestamp": "2026-02-17T13:51:56.100567"
+        }
+      ],
+      "final_result": {
+        "output_file": "simulation_case1.input",
+        "content_size": 1067
+      },
+      "completed_at": "2026-02-17T13:51:56.102232"
+    },
+    {
+      "request_id": 13,
+      "timestamp": "2026-02-17T13:58:12.900946",
+      "query": "Just run a standard simulation",
+      "steps": [
+        {
+          "step": "llm_called_mock",
+          "details": {
+            "input": "Just run a standard simulation",
+            "result": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": null,
+                "temperature": null,
+                "pressure_list": null,
+                "unit_cells": null,
+                "helium_void_fraction": null
+              },
+              "parameters": {
+                "number_of_cycles": null,
+                "initialization_cycles": null,
+                "forcefield": null,
+                "cutoff": null
+              },
+              "component": {
+                "name": null,
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 7.319450378417969e-05,
+          "timestamp": "2026-02-17T13:58:12.903120"
+        },
+        {
+          "step": "extraction_complete",
+          "details": {
+            "extracted": {
+              "simulation_type": "MonteCarlo",
+              "system": {},
+              "parameters": {},
+              "component": {
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 0.04958319664001465,
+          "timestamp": "2026-02-17T13:58:12.952549"
+        },
+        {
+          "step": "defaults_merged",
+          "details": {
+            "config": {
+              "SimulationType": "MonteCarlo",
+              "NumberOfCycles": 25000,
+              "NumberOfInitializationCycles": 5000,
+              "PrintEvery": 1000,
+              "RestartFile": "no",
+              "Forcefield": "UFF",
+              "CutOff": 12.0,
+              "ChargeMethod": "Ewald",
+              "EwaldPrecision": 1e-06,
+              "Framework": {
+                "FrameworkName": "MFI_SI",
+                "UnitCells": [
+                  2,
+                  2,
+                  2
+                ],
+                "HeliumVoidFraction": 0.29,
+                "ExternalTemperature": 298.0,
+                "ExternalPressure": [
+                  100000
+                ]
+              },
+              "Component": {
+                "Name": "CO2",
+                "MoleculeDefinition": "TraPPE",
+                "TranslationProbability": 0.5,
+                "RotationProbability": 0.5,
+                "ReinsertionProbability": 0.5,
+                "SwapProbability": 1.0,
+                "CreateNumberOfMolecules": 0
+              }
+            }
+          },
+          "time_taken": 1.9311904907226562e-05,
+          "timestamp": "2026-02-17T13:58:12.980514"
+        },
+        {
+          "step": "cif_download_error",
+          "details": {
+            "error": "generator raised StopIteration"
+          },
+          "time_taken": 0,
+          "timestamp": "2026-02-17T13:58:14.441452"
+        },
+        {
+          "step": "raspa_file_generated",
+          "details": {
+            "content_length": 1067
+          },
+          "time_taken": 1.52587890625e-05,
+          "timestamp": "2026-02-17T13:58:14.443695"
+        }
+      ],
+      "final_result": {
+        "output_file": null,
+        "content_size": 1067
+      },
+      "completed_at": "2026-02-17T13:58:14.445862"
+    },
+    {
+      "request_id": 14,
+      "timestamp": "2026-02-17T13:59:41.538276",
+      "query": "Run a methane isotherm in ZIF-8 at 300K with pressures 10kPa, 50kPa, and 100kPa.",
+      "steps": [
+        {
+          "step": "llm_called_mock",
+          "details": {
+            "input": "Run a methane isotherm in ZIF-8 at 300K with pressures 10kPa, 50kPa, and 100kPa.",
+            "result": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": null,
+                "temperature": 300.0,
+                "pressure_list": null,
+                "unit_cells": null,
+                "helium_void_fraction": null
+              },
+              "parameters": {
+                "number_of_cycles": null,
+                "initialization_cycles": null,
+                "forcefield": null,
+                "cutoff": null
+              },
+              "component": {
+                "name": "methane",
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 7.62939453125e-05,
+          "timestamp": "2026-02-17T13:59:41.540714"
+        },
+        {
+          "step": "extraction_complete",
+          "details": {
+            "extracted": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "temperature": 300.0
+              },
+              "parameters": {},
+              "component": {
+                "name": "methane",
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 0.05747795104980469,
+          "timestamp": "2026-02-17T13:59:41.598575"
+        },
+        {
+          "step": "defaults_merged",
+          "details": {
+            "config": {
+              "SimulationType": "MonteCarlo",
+              "NumberOfCycles": 25000,
+              "NumberOfInitializationCycles": 5000,
+              "PrintEvery": 1000,
+              "RestartFile": "no",
+              "Forcefield": "UFF",
+              "CutOff": 12.0,
+              "ChargeMethod": "Ewald",
+              "EwaldPrecision": 1e-06,
+              "Framework": {
+                "FrameworkName": "MFI_SI",
+                "UnitCells": [
+                  2,
+                  2,
+                  2
+                ],
+                "HeliumVoidFraction": 0.29,
+                "ExternalTemperature": 300.0,
+                "ExternalPressure": [
+                  100000
+                ]
+              },
+              "Component": {
+                "Name": "methane",
+                "MoleculeDefinition": "TraPPE",
+                "TranslationProbability": 0.5,
+                "RotationProbability": 0.5,
+                "ReinsertionProbability": 0.5,
+                "SwapProbability": 1.0,
+                "CreateNumberOfMolecules": 0
+              }
+            }
+          },
+          "time_taken": 2.7894973754882812e-05,
+          "timestamp": "2026-02-17T13:59:41.640371"
+        },
+        {
+          "step": "cif_download_error",
+          "details": {
+            "error": "generator raised StopIteration"
+          },
+          "time_taken": 0,
+          "timestamp": "2026-02-17T13:59:42.649371"
+        },
+        {
+          "step": "raspa_file_generated",
+          "details": {
+            "content_length": 1071
+          },
+          "time_taken": 3.409385681152344e-05,
+          "timestamp": "2026-02-17T13:59:42.652861"
+        },
+        {
+          "step": "file_written",
+          "details": {
+            "filename": "simulation_case2.input",
+            "size": 1071
+          },
+          "time_taken": 6.079673767089844e-05,
+          "timestamp": "2026-02-17T13:59:42.655140"
+        }
+      ],
+      "final_result": {
+        "output_file": "simulation_case2.input",
+        "content_size": 1071
+      },
+      "completed_at": "2026-02-17T13:59:42.657066"
+    },
+    {
+      "request_id": 15,
+      "timestamp": "2026-02-17T13:59:48.993639",
+      "query": "Run a methane isotherm in ZIF-8 at 300K with pressures 10kPa, 50kPa, and 100kPa.",
+      "steps": [
+        {
+          "step": "llm_called_mock",
+          "details": {
+            "input": "Run a methane isotherm in ZIF-8 at 300K with pressures 10kPa, 50kPa, and 100kPa.",
+            "result": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": null,
+                "temperature": 300.0,
+                "pressure_list": null,
+                "unit_cells": null,
+                "helium_void_fraction": null
+              },
+              "parameters": {
+                "number_of_cycles": null,
+                "initialization_cycles": null,
+                "forcefield": null,
+                "cutoff": null
+              },
+              "component": {
+                "name": "methane",
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 9.989738464355469e-05,
+          "timestamp": "2026-02-17T13:59:48.997630"
+        },
+        {
+          "step": "extraction_complete",
+          "details": {
+            "extracted": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "temperature": 300.0
+              },
+              "parameters": {},
+              "component": {
+                "name": "methane",
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 0.02561473846435547,
+          "timestamp": "2026-02-17T13:59:49.023096"
+        },
+        {
+          "step": "defaults_merged",
+          "details": {
+            "config": {
+              "SimulationType": "MonteCarlo",
+              "NumberOfCycles": 25000,
+              "NumberOfInitializationCycles": 5000,
+              "PrintEvery": 1000,
+              "RestartFile": "no",
+              "Forcefield": "UFF",
+              "CutOff": 12.0,
+              "ChargeMethod": "Ewald",
+              "EwaldPrecision": 1e-06,
+              "Framework": {
+                "FrameworkName": "MFI_SI",
+                "UnitCells": [
+                  2,
+                  2,
+                  2
+                ],
+                "HeliumVoidFraction": 0.29,
+                "ExternalTemperature": 300.0,
+                "ExternalPressure": [
+                  100000
+                ]
+              },
+              "Component": {
+                "Name": "methane",
+                "MoleculeDefinition": "TraPPE",
+                "TranslationProbability": 0.5,
+                "RotationProbability": 0.5,
+                "ReinsertionProbability": 0.5,
+                "SwapProbability": 1.0,
+                "CreateNumberOfMolecules": 0
+              }
+            }
+          },
+          "time_taken": 1.9311904907226562e-05,
+          "timestamp": "2026-02-17T13:59:49.072119"
+        },
+        {
+          "step": "cif_download_error",
+          "details": {
+            "error": "generator raised StopIteration"
+          },
+          "time_taken": 0,
+          "timestamp": "2026-02-17T13:59:50.339160"
+        },
+        {
+          "step": "raspa_file_generated",
+          "details": {
+            "content_length": 1071
+          },
+          "time_taken": 1.4781951904296875e-05,
+          "timestamp": "2026-02-17T13:59:50.341788"
+        },
+        {
+          "step": "file_written",
+          "details": {
+            "filename": "simulation_case2.input",
+            "size": 1071
+          },
+          "time_taken": 5.412101745605469e-05,
+          "timestamp": "2026-02-17T13:59:50.343882"
+        }
+      ],
+      "final_result": {
+        "output_file": "simulation_case2.input",
+        "content_size": 1071
+      },
+      "completed_at": "2026-02-17T13:59:50.345850"
+    },
+    {
+      "request_id": 16,
+      "timestamp": "2026-02-17T14:00:16.993360",
+      "query": "Run a methane isotherm in ZIF-8 at 300K with pressures 10kPa, 50kPa, and 100kPa.",
+      "steps": [
+        {
+          "step": "llm_called_mock",
+          "details": {
+            "input": "Run a methane isotherm in ZIF-8 at 300K with pressures 10kPa, 50kPa, and 100kPa.",
+            "result": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": null,
+                "temperature": 300.0,
+                "pressure_list": null,
+                "unit_cells": null,
+                "helium_void_fraction": null
+              },
+              "parameters": {
+                "number_of_cycles": null,
+                "initialization_cycles": null,
+                "forcefield": null,
+                "cutoff": null
+              },
+              "component": {
+                "name": "methane",
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 9.965896606445312e-05,
+          "timestamp": "2026-02-17T14:00:16.997406"
+        },
+        {
+          "step": "extraction_complete",
+          "details": {
+            "extracted": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "temperature": 300.0
+              },
+              "parameters": {},
+              "component": {
+                "name": "methane",
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 0.04953432083129883,
+          "timestamp": "2026-02-17T14:00:17.046758"
+        },
+        {
+          "step": "defaults_merged",
+          "details": {
+            "config": {
+              "SimulationType": "MonteCarlo",
+              "NumberOfCycles": 25000,
+              "NumberOfInitializationCycles": 5000,
+              "PrintEvery": 1000,
+              "RestartFile": "no",
+              "Forcefield": "UFF",
+              "CutOff": 12.0,
+              "ChargeMethod": "Ewald",
+              "EwaldPrecision": 1e-06,
+              "Framework": {
+                "FrameworkName": "AQOLOJ_clean",
+                "UnitCells": [
+                  2,
+                  2,
+                  2
+                ],
+                "HeliumVoidFraction": 0.29,
+                "ExternalTemperature": 300.0,
+                "ExternalPressure": [
+                  100000
+                ]
+              },
+              "Component": {
+                "Name": "methane",
+                "MoleculeDefinition": "TraPPE",
+                "TranslationProbability": 0.5,
+                "RotationProbability": 0.5,
+                "ReinsertionProbability": 0.5,
+                "SwapProbability": 1.0,
+                "CreateNumberOfMolecules": 0
+              }
+            }
+          },
+          "time_taken": 1.811981201171875e-05,
+          "timestamp": "2026-02-17T14:00:17.072936"
+        },
+        {
+          "step": "cif_downloaded",
+          "details": {
+            "framework": "AQOLOJ_clean",
+            "file": "framework/AQOLOJ_clean.cif"
+          },
+          "time_taken": 0,
+          "timestamp": "2026-02-17T14:00:18.354199"
+        },
+        {
+          "step": "raspa_file_generated",
+          "details": {
+            "content_length": 1077
+          },
+          "time_taken": 2.4080276489257812e-05,
+          "timestamp": "2026-02-17T14:00:18.357436"
+        },
+        {
+          "step": "file_written",
+          "details": {
+            "filename": "simulation_case2.input",
+            "size": 1077
+          },
+          "time_taken": 7.772445678710938e-05,
+          "timestamp": "2026-02-17T14:00:18.359821"
+        }
+      ],
+      "final_result": {
+        "output_file": "simulation_case2.input",
+        "content_size": 1077
+      },
+      "completed_at": "2026-02-17T14:00:18.362088"
+    },
+    {
+      "request_id": 17,
+      "timestamp": "2026-02-17T14:01:13.345117",
+      "query": "Simulate water in UIO-66 at 300K and 1bar .",
+      "steps": [
+        {
+          "step": "llm_called",
+          "details": {
+            "prompt": "\n        You are an expert Molecular Simulation Data Engineer.\n        Your task is to extract simul...",
+            "result": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": "UIO-66",
+                "temperature": 300.0,
+                "pressure_list": [
+                  100000.0
+                ],
+                "unit_cells": null,
+                "helium_void_fraction": null
+              },
+              "parameters": {
+                "number_of_cycles": null,
+                "initialization_cycles": null,
+                "forcefield": null,
+                "cutoff": null
+              },
+              "component": {
+                "name": "water",
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 3.909776210784912,
+          "timestamp": "2026-02-17T14:01:17.258447"
+        },
+        {
+          "step": "extraction_complete",
+          "details": {
+            "extracted": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": "UIO-66",
+                "temperature": 300.0,
+                "pressure_list": [
+                  100000.0
+                ]
+              },
+              "parameters": {},
+              "component": {
+                "name": "water",
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 3.9125664234161377,
+          "timestamp": "2026-02-17T14:01:17.260977"
+        },
+        {
+          "step": "defaults_merged",
+          "details": {
+            "config": {
+              "SimulationType": "MonteCarlo",
+              "NumberOfCycles": 25000,
+              "NumberOfInitializationCycles": 5000,
+              "PrintEvery": 1000,
+              "RestartFile": "no",
+              "Forcefield": "UFF",
+              "CutOff": 12.0,
+              "ChargeMethod": "Ewald",
+              "EwaldPrecision": 1e-06,
+              "Framework": {
+                "FrameworkName": "UIO-66",
+                "UnitCells": [
+                  2,
+                  2,
+                  2
+                ],
+                "HeliumVoidFraction": 0.29,
+                "ExternalTemperature": 300.0,
+                "ExternalPressure": [
+                  100000.0
+                ]
+              },
+              "Component": {
+                "Name": "water",
+                "MoleculeDefinition": "ExampleDefinitions",
+                "TranslationProbability": 0.5,
+                "RotationProbability": 0.5,
+                "ReinsertionProbability": 0.5,
+                "SwapProbability": 1.0,
+                "CreateNumberOfMolecules": 0
+              }
+            }
+          },
+          "time_taken": 8.106231689453125e-06,
+          "timestamp": "2026-02-17T14:01:17.263311"
+        },
+        {
+          "step": "cif_download_error",
+          "details": {
+            "error": "generator raised StopIteration"
+          },
+          "time_taken": 0,
+          "timestamp": "2026-02-17T14:01:19.021354"
+        },
+        {
+          "step": "raspa_file_generated",
+          "details": {
+            "content_length": 1083
+          },
+          "time_taken": 1.3589859008789062e-05,
+          "timestamp": "2026-02-17T14:01:19.024273"
+        },
+        {
+          "step": "file_written",
+          "details": {
+            "filename": "simulation_case1.input",
+            "size": 1083
+          },
+          "time_taken": 5.602836608886719e-05,
+          "timestamp": "2026-02-17T14:01:19.026736"
+        }
+      ],
+      "final_result": {
+        "output_file": "simulation_case1.input",
+        "content_size": 1083
+      },
+      "completed_at": "2026-02-17T14:01:19.028992"
+    },
+    {
+      "request_id": 18,
+      "timestamp": "2026-02-17T14:01:35.142957",
+      "query": "Run a methane isotherm in ZIF-8 at 300K with pressures 10kPa, 50kPa, and 100kPa.",
+      "steps": [
+        {
+          "step": "llm_called",
+          "details": {
+            "prompt": "\n        You are an expert Molecular Simulation Data Engineer.\n        Your task is to extract simul...",
+            "result": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": "ZIF-8",
+                "temperature": 300.0,
+                "pressure_list": [
+                  10000.0,
+                  50000.0,
+                  100000.0
+                ],
+                "unit_cells": null,
+                "helium_void_fraction": null
+              },
+              "parameters": {
+                "number_of_cycles": null,
+                "initialization_cycles": null,
+                "forcefield": null,
+                "cutoff": null
+              },
+              "component": {
+                "name": "methane",
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 4.045622110366821,
+          "timestamp": "2026-02-17T14:01:39.192269"
+        },
+        {
+          "step": "extraction_complete",
+          "details": {
+            "extracted": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": "ZIF-8",
+                "temperature": 300.0,
+                "pressure_list": [
+                  10000.0,
+                  50000.0,
+                  100000.0
+                ]
+              },
+              "parameters": {},
+              "component": {
+                "name": "methane",
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 4.048937797546387,
+          "timestamp": "2026-02-17T14:01:39.195560"
+        },
+        {
+          "step": "defaults_merged",
+          "details": {
+            "config": {
+              "SimulationType": "MonteCarlo",
+              "NumberOfCycles": 25000,
+              "NumberOfInitializationCycles": 5000,
+              "PrintEvery": 1000,
+              "RestartFile": "no",
+              "Forcefield": "UFF",
+              "CutOff": 12.0,
+              "ChargeMethod": "Ewald",
+              "EwaldPrecision": 1e-06,
+              "Framework": {
+                "FrameworkName": "ZIF-8",
+                "UnitCells": [
+                  2,
+                  2,
+                  2
+                ],
+                "HeliumVoidFraction": 0.29,
+                "ExternalTemperature": 300.0,
+                "ExternalPressure": [
+                  10000.0,
+                  50000.0,
+                  100000.0
+                ]
+              },
+              "Component": {
+                "Name": "methane",
+                "MoleculeDefinition": "TraPPE",
+                "TranslationProbability": 0.5,
+                "RotationProbability": 0.5,
+                "ReinsertionProbability": 0.5,
+                "SwapProbability": 1.0,
+                "CreateNumberOfMolecules": 0
+              }
+            }
+          },
+          "time_taken": 7.152557373046875e-06,
+          "timestamp": "2026-02-17T14:01:39.197851"
+        },
+        {
+          "step": "cif_download_error",
+          "details": {
+            "error": "generator raised StopIteration"
+          },
+          "time_taken": 0,
+          "timestamp": "2026-02-17T14:01:40.608616"
+        },
+        {
+          "step": "raspa_file_generated",
+          "details": {
+            "content_length": 1088
+          },
+          "time_taken": 1.9073486328125e-05,
+          "timestamp": "2026-02-17T14:01:40.611815"
+        },
+        {
+          "step": "file_written",
+          "details": {
+            "filename": "simulation_case2.input",
+            "size": 1088
+          },
+          "time_taken": 6.151199340820312e-05,
+          "timestamp": "2026-02-17T14:01:40.614397"
+        }
+      ],
+      "final_result": {
+        "output_file": "simulation_case2.input",
+        "content_size": 1088
+      },
+      "completed_at": "2026-02-17T14:01:40.616783"
+    },
+    {
+      "request_id": 19,
+      "timestamp": "2026-02-17T14:17:51.956983",
+      "query": "Simulate water in UIO-66 at 300K and 1bar .",
+      "steps": [
+        {
+          "step": "llm_called",
+          "details": {
+            "prompt": "\n        You are an expert Molecular Simulation Data Engineer.\n        Your task is to extract simul...",
+            "result": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": "UIO-66",
+                "temperature": 300.0,
+                "pressure_list": [
+                  100000.0
+                ],
+                "unit_cells": null,
+                "helium_void_fraction": null
+              },
+              "parameters": {
+                "number_of_cycles": null,
+                "initialization_cycles": null,
+                "forcefield": null,
+                "cutoff": null
+              },
+              "component": {
+                "name": "water",
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 3.83195424079895,
+          "timestamp": "2026-02-17T14:17:55.793460"
+        },
+        {
+          "step": "extraction_complete",
+          "details": {
+            "extracted": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": "UIO-66",
+                "temperature": 300.0,
+                "pressure_list": [
+                  100000.0
+                ]
+              },
+              "parameters": {},
+              "component": {
+                "name": "water",
+                "mole_fraction": 1.0
+              }
+            }
+          },
+          "time_taken": 3.8351383209228516,
+          "timestamp": "2026-02-17T14:17:55.796458"
+        },
+        {
+          "step": "defaults_merged",
+          "details": {
+            "config": {
+              "SimulationType": "MonteCarlo",
+              "NumberOfCycles": 25000,
+              "NumberOfInitializationCycles": 5000,
+              "PrintEvery": 1000,
+              "RestartFile": "no",
+              "Forcefield": "UFF",
+              "CutOff": 12.0,
+              "ChargeMethod": "Ewald",
+              "EwaldPrecision": 1e-06,
+              "Framework": {
+                "FrameworkName": "UIO-66",
+                "UnitCells": [
+                  2,
+                  2,
+                  2
+                ],
+                "HeliumVoidFraction": 0.29,
+                "ExternalTemperature": 300.0,
+                "ExternalPressure": [
+                  100000.0
+                ]
+              },
+              "Component": {
+                "Name": "water",
+                "MoleculeDefinition": "ExampleDefinitions",
+                "TranslationProbability": 0.5,
+                "RotationProbability": 0.5,
+                "ReinsertionProbability": 0.5,
+                "SwapProbability": 1.0,
+                "CreateNumberOfMolecules": 0
+              }
+            }
+          },
+          "time_taken": 1.0013580322265625e-05,
+          "timestamp": "2026-02-17T14:17:55.798994"
+        },
+        {
+          "step": "cif_download_error",
+          "details": {
+            "error": "generator raised StopIteration"
+          },
+          "time_taken": 0,
+          "timestamp": "2026-02-17T14:17:58.585087"
+        },
+        {
+          "step": "cif_downloaded",
+          "details": {
+            "framework": "AQOLOJ_clean",
+            "file": "framework/AQOLOJ_clean.cif"
+          },
+          "time_taken": 0,
+          "timestamp": "2026-02-17T14:18:17.957334"
+        },
+        {
+          "step": "raspa_file_generated",
+          "details": {
+            "content_length": 1089
+          },
+          "time_taken": 2.1457672119140625e-05,
+          "timestamp": "2026-02-17T14:18:17.960748"
+        },
+        {
+          "step": "file_written",
+          "details": {
+            "filename": "simulation_case1.input",
+            "size": 1089
+          },
+          "time_taken": 5.8650970458984375e-05,
+          "timestamp": "2026-02-17T14:18:17.963322"
+        }
+      ],
+      "final_result": {
+        "output_file": "simulation_case1.input",
+        "content_size": 1089
+      },
+      "completed_at": "2026-02-17T14:18:17.967961"
+    },
+    {
+      "request_id": 20,
+      "timestamp": "2026-03-17T14:39:44.614551",
+      "query": "Simulate CO2 in HKUST-1 at 298K",
+      "steps": [
+        {
+          "step": "intent_extracted",
+          "details": {
+            "simulation": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": "HKUST-1",
+                "temperature": 298.0,
+                "pressure_list": null,
+                "unit_cells": null,
+                "helium_void_fraction": null
+              },
+              "parameters": {
+                "number_of_cycles": null,
+                "initialization_cycles": null,
+                "forcefield": null,
+                "cutoff": null
+              },
+              "component": {
+                "name": "CO2",
+                "mole_fraction": 1.0
+              }
+            },
+            "discovery": {
+              "mofid": null,
+              "mofkey": null,
+              "name": null,
+              "database": null,
+              "vf_min": null,
+              "vf_max": null,
+              "lcd_min": null,
+              "lcd_max": null,
+              "pld_min": null,
+              "pld_max": null,
+              "sa_m2g_min": null,
+              "sa_m2g_max": null,
+              "sa_m2cm3_min": null,
+              "sa_m2cm3_max": null,
+              "pressure_unit": null,
+              "loading_unit": null,
+              "limit": 20
+            }
+          },
+          "time_taken": 3.7386560440063477,
+          "timestamp": "2026-03-17T14:39:48.357735"
+        },
+        {
+          "step": "discovery_started",
+          "details": {
+            "filters": {
+              "mofid": null,
+              "mofkey": null,
+              "name": null,
+              "database": null,
+              "vf_min": null,
+              "vf_max": null,
+              "lcd_min": null,
+              "lcd_max": null,
+              "pld_min": null,
+              "pld_max": null,
+              "sa_m2g_min": null,
+              "sa_m2g_max": null,
+              "sa_m2cm3_min": null,
+              "sa_m2cm3_max": null,
+              "pressure_unit": null,
+              "loading_unit": null,
+              "limit": 20
+            }
+          },
+          "time_taken": 0,
+          "timestamp": "2026-03-17T14:39:48.364631"
+        },
+        {
+          "step": "mof_retrieved",
+          "details": {
+            "mof_name": "hMOF-6"
+          },
+          "time_taken": 17.192421913146973,
+          "timestamp": "2026-03-17T14:40:05.555384"
+        },
+        {
+          "step": "raspa_completed",
+          "details": {
+            "status": "success"
+          },
+          "time_taken": 89.66148614883423,
+          "timestamp": "2026-03-17T14:41:35.220029"
+        }
+      ],
+      "final_result": "Workflow completed successfully",
+      "completed_at": "2026-03-17T14:41:35.221609"
+    },
+    {
+      "request_id": 21,
+      "timestamp": "2026-03-17T14:42:42.407285",
+      "query": "Perform a GCMC simulation of CO2 adsorption at 298 K and 1 bar on a high surface area microporous MOF. Use TraPPE for CO2, and run 5000 production cycles after 1000 initialization cycles. Report absolute loading in mol/kg and cm3(STP)/g.",
+      "steps": [],
+      "final_result": null
+    },
+    {
+      "request_id": 22,
+      "timestamp": "2026-03-17T14:47:32.587375",
+      "query": "Perform a series of GCMC simulations to generate a CO2 adsorption isotherm at 298 K on a high surface area microporous MOF. Use the TraPPE force field for CO2.",
+      "steps": [
+        {
+          "step": "intent_extracted",
+          "details": {
+            "simulation": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": null,
+                "temperature": 298.0,
+                "pressure_list": null,
+                "unit_cells": null,
+                "helium_void_fraction": null
+              },
+              "parameters": {
+                "number_of_cycles": null,
+                "initialization_cycles": null,
+                "forcefield": "TraPPE",
+                "cutoff": null
+              },
+              "component": {
+                "name": "CO2",
+                "mole_fraction": 1.0
+              }
+            },
+            "discovery": {
+              "mofid": null,
+              "mofkey": null,
+              "name": null,
+              "database": null,
+              "vf_min": null,
+              "vf_max": null,
+              "lcd_min": null,
+              "lcd_max": null,
+              "pld_min": null,
+              "pld_max": 2.0,
+              "sa_m2g_min": 1500.0,
+              "sa_m2g_max": null,
+              "sa_m2cm3_min": null,
+              "sa_m2cm3_max": null,
+              "pressure_unit": null,
+              "loading_unit": null,
+              "limit": 20
+            }
+          },
+          "time_taken": 4.741492986679077,
+          "timestamp": "2026-03-17T14:47:37.335633"
+        },
+        {
+          "step": "discovery_started",
+          "details": {
+            "filters": {
+              "mofid": null,
+              "mofkey": null,
+              "name": null,
+              "database": null,
+              "vf_min": null,
+              "vf_max": null,
+              "lcd_min": null,
+              "lcd_max": null,
+              "pld_min": null,
+              "pld_max": 2.0,
+              "sa_m2g_min": 1500.0,
+              "sa_m2g_max": null,
+              "sa_m2cm3_min": null,
+              "sa_m2cm3_max": null,
+              "pressure_unit": null,
+              "loading_unit": null,
+              "limit": 20
+            }
+          },
+          "time_taken": 0,
+          "timestamp": "2026-03-17T14:47:37.343676"
+        }
+      ],
+      "final_result": null
+    },
+    {
+      "request_id": 23,
+      "timestamp": "2026-03-17T14:49:41.160603",
+      "query": "Perform a series of GCMC simulations to generate a CO2 adsorption isotherm at 298 K on a high surface area microporous MOF. Use the TraPPE force field for CO2.Plot an isotherm using 10 points upto 1 bar . For each pressure point, run 1000 production cycles after 500 initialization cycles",
+      "steps": [
+        {
+          "step": "intent_extracted",
+          "details": {
+            "simulation": {
+              "simulation_type": "MonteCarlo",
+              "system": {
+                "framework_name": null,
+                "temperature": 298.0,
+                "pressure_list": [
+                  10000.0,
+                  20000.0,
+                  30000.0,
+                  40000.0,
+                  50000.0,
+                  60000.0,
+                  70000.0,
+                  80000.0,
+                  90000.0,
+                  100000.0
+                ],
+                "unit_cells": null,
+                "helium_void_fraction": null
+              },
+              "parameters": {
+                "number_of_cycles": 1000,
+                "initialization_cycles": 500,
+                "forcefield": "TraPPE",
+                "cutoff": null
+              },
+              "component": {
+                "name": "CO2",
+                "mole_fraction": 1.0
+              }
+            },
+            "discovery": {
+              "mofid": null,
+              "mofkey": null,
+              "name": null,
+              "database": null,
+              "vf_min": null,
+              "vf_max": null,
+              "lcd_min": null,
+              "lcd_max": null,
+              "pld_min": null,
+              "pld_max": 2.0,
+              "sa_m2g_min": 1500.0,
+              "sa_m2g_max": null,
+              "sa_m2cm3_min": null,
+              "sa_m2cm3_max": null,
+              "pressure_unit": "bar",
+              "loading_unit": null,
+              "limit": 20
+            }
+          },
+          "time_taken": 8.883293867111206,
+          "timestamp": "2026-03-17T14:49:50.050933"
+        },
+        {
+          "step": "discovery_started",
+          "details": {
+            "filters": {
+              "mofid": null,
+              "mofkey": null,
+              "name": null,
+              "database": null,
+              "vf_min": null,
+              "vf_max": null,
+              "lcd_min": null,
+              "lcd_max": null,
+              "pld_min": null,
+              "pld_max": 2.0,
+              "sa_m2g_min": 1500.0,
+              "sa_m2g_max": null,
+              "sa_m2cm3_min": null,
+              "sa_m2cm3_max": null,
+              "pressure_unit": "bar",
+              "loading_unit": null,
+              "limit": 20
+            }
+          },
+          "time_taken": 0,
+          "timestamp": "2026-03-17T14:49:50.058730"
+        },
+        {
+          "step": "mof_retrieved",
+          "details": {
+            "mof_name": "hMOF-2000981"
+          },
+          "time_taken": 121.03362679481506,
+          "timestamp": "2026-03-17T14:51:51.093209"
+        },
+        {
+          "step": "raspa_completed",
+          "details": {
+            "status": "success"
+          },
+          "time_taken": 550.6772749423981,
+          "timestamp": "2026-03-17T15:01:01.777261"
+        }
+      ],
+      "final_result": "Workflow completed successfully",
+      "completed_at": "2026-03-17T15:01:01.779068"
     }
   ]
 }

@@ -1,2 +1,34 @@
 .env
+**/.env# Environment files
+.env
 **/.env
+
+# macOS
+.DS_Store
+
+# Python cache/build
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local Python/Conda environments
+.venv/
+venv/
+env/
+WEEK1/raspa_env/
+
+# RASPA simulation outputs (generated)
+# WEEK1/Movies/
+# WEEK1/Output/
+# WEEK1/Restart/
+# WEEK1/VTK/
+# WEEK1/Plots/
+
+# Runtime logs
+# *.log
+# WEEK1/raspa_log.json

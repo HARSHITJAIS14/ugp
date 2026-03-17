@@ -1,0 +1,10 @@
+# Python dependencies inferred from WEEK1 source imports
+python-dotenv
+pydantic
+requests
+matplotlib
+mofdb-client
+
+# Note:
+# - RASPA itself is installed in WEEK1/raspa_env as a conda package (raspa2),
+#   not a pip package, so it is not listed here.

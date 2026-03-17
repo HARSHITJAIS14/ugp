@@ -1,0 +1,27 @@
+
+SimulationType                MonteCarlo
+NumberOfCycles                1000
+NumberOfInitializationCycles  500
+PrintEvery                    1000
+RestartFile                   no
+
+Forcefield                    ExampleMOFsForceField
+CutOff                        12.0
+ChargeMethod                  Ewald
+EwaldPrecision                1e-06
+RemoveAtomNumberCodeFromLabel yes
+
+Framework 0
+FrameworkName hMOF-2000981
+UnitCells 2 2 2
+HeliumVoidFraction 0.29
+ExternalTemperature 298.0
+ExternalPressure 100000.0
+
+Component 0 MoleculeName              CO2
+            MoleculeDefinition        TraPPE
+            TranslationProbability    0.5
+            RotationProbability       0.5
+            ReinsertionProbability    0.5
+            SwapProbability           1.0
+            CreateNumberOfMolecules   0
